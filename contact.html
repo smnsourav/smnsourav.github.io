@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+/* Apply saved/system theme before first paint to avoid a flash. */
+(function(){
+  try{
+    var saved = localStorage.getItem("theme");
+    var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  }catch(e){}
+})();
+</script>
+<title>Contact — Suman Sourav, Aalborg University</title>
+<meta name="description" content="Contact Dr. Suman Sourav, Assistant Professor of Computer Science at Aalborg University, for collaboration, supervision, or speaking inquiries.">
+<link rel="canonical" href="https://username.github.io/contact.html">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Suman Sourav">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — Suman Sourav, Aalborg University">
+<meta property="og:description" content="Contact Dr. Suman Sourav, Assistant Professor of Computer Science at Aalborg University, for collaboration, supervision, or speaking inquiries.">
+<meta property="og:url" content="https://username.github.io/contact.html">
+<meta property="og:site_name" content="Suman Sourav">
+<!-- [TO UPDATE] Add an og:image once you have a profile photo, e.g.: -->
+<!-- <meta property="og:image" content="https://username.github.io/assets/images/suman-sourav-1.jpg"> -->
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Contact — Suman Sourav, Aalborg University">
+<meta name="twitter:description" content="Contact Dr. Suman Sourav, Assistant Professor of Computer Science at Aalborg University, for collaboration, supervision, or speaking inquiries.">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">SS</span>
+      <span>Suman Sourav<small>Asst. Professor, Aalborg University</small></span>
+    </a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Switch to dark theme">
+        <span class="knob" id="theme-toggle-knob" aria-hidden="true">☀️</span>
+      </button>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <!-- <li><a href="projects.html">Projects</a></li> -->
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="talks-service.html">Talks & Service</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <!-- <li><a class="nav-cta js-cv-link" href="#" download> Download CV </a></li>-->
+      </ul>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+     <!--<p class="eyebrow">Contact</p>-->
+    <h1>Get in touch</h1>
+    <p class="lede">Open to collaborations, supervision inquiries, and speaking invitations.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-grid">
+    <div>
+      <div class="card">
+        <h3>Office</h3>
+        <p>2.1.107, Building A<br>
+          Department of Computer Science<br>
+          Aalborg University, Copenhagen <br>
+          A. C. Meyers Vænge 15, 2450 København, Denmark
+        </p>
+      </div>
+      <div class="card" style="margin-top:1.5rem;">
+        <h3>Email</h3>
+        <p><a class="js-email" href="mailto:sumansourav@cs.aau.dk">sumansourav[at]cs[dot]aau[dot]dk</a></p>
+
+      </div>
+      <div class="card" style="margin-top:1.5rem;">
+        <h3>Academic &amp; social links</h3>
+        <ul class="footer-links" style="margin:0;">
+          <li><a data-social="scholar" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a data-social="orcid" target="_blank" rel="noopener">ORCID</a></li>
+          <li><a data-social="dblp" target="_blank" rel="noopener">DBLP</a></li>
+          <li><a data-social="linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a data-social="university" target="_blank" rel="noopener">University profile</a></li>
+        </ul>
+        <p class="muted" style="font-size:.8rem;margin-top:.6rem;"></p>
+      </div>
+    </div>
+    <div>
+      <div class="card">
+        <h3>Send a message</h3>
+        <p class="muted" style="font-size:.85rem;"></p>
+        <form class="contact-form" action="https://formspree.io/f/mjyvwgyo" method="POST">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit" style="align-self:flex-start;">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><span class="brand-mark" aria-hidden="true">SS</span><span>Suman Sourav<small>Aalborg University, Copenhagen</small></span></div>
+      <ul class="footer-links">
+        <li><a class="js-email" href="mailto:sumansourav@cs.aau.dk">sumansourav@cs.aau.dk</a></li>
+        <li><a data-social="scholar" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a data-social="orcid" target="_blank" rel="noopener">ORCID</a></li>
+        <li><a data-social="dblp" target="_blank" rel="noopener">DBLP</a></li>
+        <li><a data-social="linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="footer-links">
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-note">
+    &copy; <span class="js-year"></span> Suman Sourav · Assistant Professor of Computer Science, Aalborg University, Copenhagen. Site last updated September 2026.
+  </div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/research-data.js"></script>
+<script src="js/publications-data.js"></script>
+<script src="js/projects-data.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/trivia-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

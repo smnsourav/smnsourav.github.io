@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+/* Apply saved/system theme before first paint to avoid a flash. */
+(function(){
+  try{
+    var saved = localStorage.getItem("theme");
+    var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  }catch(e){}
+})();
+</script>
+<title>Publications — Suman Sourav, Aalborg University</title>
+<meta name="description" content="Full, searchable publication list for Dr. Suman Sourav: journal articles, conference papers, and book chapters in distributed systems, networking, and cyber-physical systems security.">
+<link rel="canonical" href="https://username.github.io/publications.html">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Suman Sourav">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Publications — Suman Sourav, Aalborg University">
+<meta property="og:description" content="Full, searchable publication list for Dr. Suman Sourav: journal articles, conference papers, and book chapters in distributed systems, networking, and cyber-physical systems security.">
+<meta property="og:url" content="https://username.github.io/publications.html">
+<meta property="og:site_name" content="Suman Sourav">
+<!-- [TO UPDATE] Add an og:image once you have a profile photo, e.g.: -->
+<!-- <meta property="og:image" content="https://username.github.io/assets/images/suman-sourav-1.jpg"> -->
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Publications — Suman Sourav, Aalborg University">
+<meta name="twitter:description" content="Full, searchable publication list for Dr. Suman Sourav: journal articles, conference papers, and book chapters in distributed systems, networking, and cyber-physical systems security.">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">SS</span>
+      <span>Suman Sourav<small>Asst. Professor, Aalborg University</small></span>
+    </a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Switch to dark theme">
+        <span class="knob" id="theme-toggle-knob" aria-hidden="true">☀️</span>
+      </button>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html" aria-current="page">Publications</a></li>
+        <!-- <li><a href="projects.html">Projects</a></li> -->
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="talks-service.html">Talks & Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a class="nav-cta js-cv-link" href="#" download> Download CV </a></li>-->
+      </ul>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">Home</a> / Publications</p>
+     <!--<p class="eyebrow">Publications</p>-->
+    <h1>Publications</h1>
+    <!-- <p class="lede">Journal articles, conference papers, and book chapters, in reverse chronological order. Search, or filter by year, type, or research area. To add a new paper, edit one file: <code>js/publications-data.js</code>.</p>-->
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="pub-toolbar">
+      <input type="search" id="pub-search" placeholder="Search by title or venue…" aria-label="Search publications">
+      <select id="pub-year" aria-label="Filter by year"><option value="">All years</option></select>
+      <select id="pub-type" aria-label="Filter by type">
+        <option value="">All types</option>
+        <option value="journal">Journal</option>
+        <option value="conference">Conference</option>
+        <option value="chapter">Book chapter</option>
+      </select>
+      <select id="pub-area" aria-label="Filter by research area"><option value="">All research areas</option></select>
+    </div>
+    <p class="pub-count" id="pub-count"></p>
+    <div class="pub-list" id="pub-list"></div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><span class="brand-mark" aria-hidden="true">SS</span><span>Suman Sourav<small>Aalborg University, Copenhagen</small></span></div>
+      <ul class="footer-links">
+        <li><a class="js-email" href="mailto:sumansourav@cs.aau.dk">sumansourav@cs.aau.dk</a></li>
+        <li><a data-social="scholar" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a data-social="orcid" target="_blank" rel="noopener">ORCID</a></li>
+        <li><a data-social="dblp" target="_blank" rel="noopener">DBLP</a></li>
+        <li><a data-social="linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="footer-links">
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-note">
+    &copy; <span class="js-year"></span> Suman Sourav · Assistant Professor of Computer Science, Aalborg University, Copenhagen. Site last updated September 2026.
+  </div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/research-data.js"></script>
+<script src="js/publications-data.js"></script>
+<script src="js/projects-data.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/trivia-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

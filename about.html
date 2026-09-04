@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+/* Apply saved/system theme before first paint to avoid a flash. */
+(function(){
+  try{
+    var saved = localStorage.getItem("theme");
+    var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  }catch(e){}
+})();
+</script>
+<title>About Suman Sourav — Assistant Professor of Computer Science, Aalborg University</title>
+<meta name="description" content="Academic biography of Dr. Suman Sourav: education at NUS, ISI Kolkata and VSSUT, postdoctoral work at SUTD/UIUC, and his current role as Assistant Professor at Aalborg University.">
+<link rel="canonical" href="https://username.github.io/about.html">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Suman Sourav">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="About Suman Sourav — Assistant Professor of Computer Science, Aalborg University">
+<meta property="og:description" content="Academic biography of Dr. Suman Sourav: education at NUS, ISI Kolkata and VSSUT, postdoctoral work at SUTD/UIUC, and his current role as Assistant Professor at Aalborg University.">
+<meta property="og:url" content="https://username.github.io/about.html">
+<meta property="og:site_name" content="Suman Sourav">
+<!-- [TO UPDATE] Add an og:image once you have a profile photo, e.g.: -->
+<!-- <meta property="og:image" content="https://username.github.io/assets/images/suman-sourav-1.jpg"> -->
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="About Suman Sourav — Assistant Professor of Computer Science, Aalborg University">
+<meta name="twitter:description" content="Academic biography of Dr. Suman Sourav: education at NUS, ISI Kolkata and VSSUT, postdoctoral work at SUTD/UIUC, and his current role as Assistant Professor at Aalborg University.">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">SS</span>
+      <span>Suman Sourav<small>Asst. Professor, Aalborg University</small></span>
+    </a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Switch to dark theme">
+        <span class="knob" id="theme-toggle-knob" aria-hidden="true">☀️</span>
+      </button>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <!-- <li><a href="projects.html">Projects</a></li> -->
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="talks-service.html">Talks & Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a class="nav-cta js-cv-link" href="#" download> Download CV </a></li>-->
+      </ul>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">Home</a> / About</p>
+     <!--<p class="eyebrow">About</p>-->
+    <h1>My Academic Journey</h1>
+    <!--<p class="lede">Academic background, current position, and research philosophy.</p> -->
+  </div>
+</section>
+
+
+
+
+
+<section>
+   <div class="container">
+   <div class="timeline">
+        <div class="timeline-item"><div class="when">Mar 2025 – Present</div><h3>Assistant Professor</h3><p class="muted">Aalborg University, Copenhagen, Denmark</p></div>
+        <div class="timeline-item"><div class="when">Mar 2022 – Mar 2025</div><h3>Research Fellow II</h3><p class="muted">Singapore University of Technology and Design — Mentor: Dr. Binbin Chen</p></div>
+        <div class="timeline-item"><div class="when">Mar 2022 – Jan 2025</div><h3>Adjunct Postdoctoral Researcher</h3><p class="muted">Illinois Advanced Research Center, UIUC (Singapore)</p></div>
+        <div class="timeline-item"><div class="when">Jan 2020 – Mar 2022</div><h3>Postdoctoral Researcher</h3><p class="muted">Illinois Advanced Research Center, UIUC (Singapore) — Mentor: Dr. Binbin Chen</p></div>
+        <div class="timeline-item"><div class="when">Jul 2019 – Aug 2019</div><h3>Visiting Researcher</h3><p class="muted">Indian Institute of Technology, Chennai — Host: Dr. John Augustine</p></div>
+        <div class="timeline-item"><div class="when">Jul 2018 – Dec 2019</div><h3>Research Assistant</h3><p class="muted">National University of Singapore — Advisor: Dr. Seth Gilbert</p></div>
+        <div class="timeline-item"><div class="when">Jan 2014 – Nov 2019</div><h3>PhD, Computer Science</h3><p class="muted">National University of Singapore · Thesis: "Latency, Conductance and the Role of Connectivity in Graph Problems" · Advisor: Dr. Seth Gilbert</p></div>
+        <div class="timeline-item"><div class="when">Jun 2011 – Jul 2013</div><h3>M.Tech, Computer Science</h3><p class="muted">Indian Statistical Institute, Kolkata · Thesis: "A Quantitative Analysis of the Bitcoin Transaction Graph" · Advisor: Dr. Palash Sarkar</p></div>
+        <div class="timeline-item"><div class="when">May 2007 – May 2011</div><h3>B.Tech, Computer Science &amp; Engineering</h3><p class="muted">Veer Surendra Sai University of Technology, Burla · University Topper (5th, 7th, 8th semesters) · Thesis: "Better Communication through CrossCube Ring Connected Networks" · Advisor: Dr. C.R. Tripathy</p></div>
+      </div>
+     </div>
+</section>
+<!--<section class="text-content">
+  <div class="container two-col">
+    <div>
+      <h2>Biography</h2>
+      <p>Suman Sourav is an Assistant Professor of Computer Science at Aalborg University, Copenhagen, where he has worked since March 2025. His research sits at the intersection of distributed-systems theory and the systems that increasingly depend on it — communication networks such as satellite networks, IoT and edge-cloud networks, and cyber-physical systems.</p>
+      <p>Before joining Aalborg University, Suman spent three years as a Research Fellow II at the Singapore University of Technology and Design (SUTD), mentored by Dr. Binbin Chen, while concurrently holding adjunct and postdoctoral positions at the Illinois Advanced Research Center, a partnership with the University of Illinois at Urbana-Champaign (UIUC), based in Singapore. During this period his work moved from the purely theoretical questions of his PhD toward applied problems in satellite networking and industrial control system security.</p>
+      <p>Suman completed his PhD in Computer Science at the National University of Singapore (2014–2019) under the supervision of Dr. Seth Gilbert, with a thesis on <em>Latency, Conductance and the Role of Connectivity in Graph Problems</em>. During his PhD, he spent time as a visiting researcher at IIT Chennai, hosted by Dr. John Augustine, and received the Research Achievement Award from the NUS School of Computing for the 2017–2018 academic year. He was also selected as one of 100 young researchers worldwide to attend the 7th Heidelberg Laureate Forum in 2019, and was invited back as an alumnus for the Forum's 10th-anniversary edition in 2023.</p>
+      <p>Prior to his PhD, Suman earned an M.Tech in Computer Science from the Indian Statistical Institute, Kolkata, with a thesis on the Bitcoin transaction graph, and a B.Tech in Computer Science and Engineering from Veer Surendra Sai University of Technology, Burla, where he was University Topper in three semesters.</p>
+
+
+      <h2>Research philosophy</h2>
+      <p>My research explores the intersection of theory and systems application. He is drawn to problems where a clean theoretical model — a graph, a latency bound, a routing constraint — meets the messiness of a real deployed network, whether that network is a satellite constellation, a substation, or a fleet of IoT edge devices. Much of his work asks how to preserve strong guarantees (speed, correctness, security) when the underlying network is dynamic, resource-constrained, or actively under attack.</p>
+
+
+      <h2>Academic journey at a glance</h2>
+      <div class="timeline">
+        <div class="timeline-item"><div class="when">Mar 2025 – Present</div><h3>Assistant Professor</h3><p class="muted">Aalborg University, Copenhagen, Denmark</p></div>
+        <div class="timeline-item"><div class="when">Mar 2022 – Mar 2025</div><h3>Research Fellow II</h3><p class="muted">Singapore University of Technology and Design — Mentor: Dr. Binbin Chen</p></div>
+        <div class="timeline-item"><div class="when">Mar 2022 – Jan 2025</div><h3>Adjunct Postdoctoral Researcher</h3><p class="muted">Illinois Advanced Research Center, UIUC (Singapore)</p></div>
+        <div class="timeline-item"><div class="when">Jan 2020 – Mar 2022</div><h3>Postdoctoral Researcher</h3><p class="muted">Illinois Advanced Research Center, UIUC (Singapore) — Mentor: Dr. Binbin Chen</p></div>
+        <div class="timeline-item"><div class="when">Jul 2019 – Aug 2019</div><h3>Visiting Researcher</h3><p class="muted">Indian Institute of Technology, Chennai — Host: Dr. John Augustine</p></div>
+        <div class="timeline-item"><div class="when">Jul 2018 – Dec 2019</div><h3>Research Assistant</h3><p class="muted">National University of Singapore — Advisor: Dr. Seth Gilbert</p></div>
+        <div class="timeline-item"><div class="when">Jan 2014 – Nov 2019</div><h3>PhD, Computer Science</h3><p class="muted">National University of Singapore · GPA 4.4/5.0 · Thesis: "Latency, Conductance and the Role of Connectivity in Graph Problems" · Advisor: Dr. Seth Gilbert</p></div>
+        <div class="timeline-item"><div class="when">Jun 2011 – Jul 2013</div><h3>M.Tech, Computer Science</h3><p class="muted">Indian Statistical Institute, Kolkata · 82.63/100 · Thesis: "A Quantitative Analysis of the Bitcoin Transaction Graph" · Advisor: Dr. Palash Sarkar</p></div>
+        <div class="timeline-item"><div class="when">May 2007 – May 2011</div><h3>B.Tech, Computer Science &amp; Engineering</h3><p class="muted">Veer Surendra Sai University of Technology, Burla · GPA 8.71/10.0 · University Topper (5th, 7th, 8th semesters) · Thesis: "Better Communication through CrossCube Ring Connected Networks" · Advisor: Dr. C.R. Tripathy</p></div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="card">
+        <h3>Research interests</h3>
+        <ul>
+          <li>Distributed Systems</li>
+          <li>Satellite Networks</li>
+          <li>IoT &amp; Edge-Cloud Systems</li>
+          <li>Network Communication Algorithms</li>
+          <li>Cyber-Physical Systems Security</li>
+        </ul>
+      </div>
+      <div class="card" style="margin-top:1.5rem;">
+        <h3>Quick facts</h3>
+        <p class="muted">🎓 PhD, National University of Singapore<br>🏛️ Assistant Professor, Aalborg University<br>🌍 Based in Copenhagen, Denmark<br>🏆 NUS Research Achievement Award</p>
+      </div>
+      <div class="card" style="margin-top:1.5rem;">
+        <a class="btn btn-primary js-cv-link" href="#" download style="width:100%;justify-content:center;">Download full CV</a>
+      </div>
+    </aside>
+  </div>
+</section> -->
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><span class="brand-mark" aria-hidden="true">SS</span><span>Suman Sourav<small>Aalborg University, Copenhagen</small></span></div>
+      <ul class="footer-links">
+        <li><a class="js-email" href="mailto:sumansourav@cs.aau.dk">sumansourav@cs.aau.dk</a></li>
+        <li><a data-social="scholar" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a data-social="orcid" target="_blank" rel="noopener">ORCID</a></li>
+        <li><a data-social="dblp" target="_blank" rel="noopener">DBLP</a></li>
+        <li><a data-social="linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="footer-links">
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-note">
+    &copy; <span class="js-year"></span> Suman Sourav · Assistant Professor of Computer Science, Aalborg University, Copenhagen. Site last updated September 2026.
+  </div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/research-data.js"></script>
+<script src="js/publications-data.js"></script>
+<script src="js/projects-data.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/trivia-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

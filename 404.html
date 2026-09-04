@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+(function(){
+  try{
+    var saved = localStorage.getItem("theme");
+    var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  }catch(e){}
+})();
+</script>
+<title>Page not found — Suman Sourav</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">SS</span>
+      <span>Suman Sourav<small>Asst. Professor, Aalborg University</small></span>
+    </a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Switch to dark theme">
+        <span class="knob" id="theme-toggle-knob" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main" style="min-height:60vh;display:flex;align-items:center;">
+  <div class="container" style="text-align:center;">
+    <p class="eyebrow">404</p>
+    <h1>This page wandered off the network.</h1>
+    <p class="lede" style="margin:0 auto 1.5rem;">The page you're looking for doesn't exist — maybe it moved, or the link had a typo.</p>
+    <a class="btn btn-primary" href="index.html">Back to homepage</a>
+  </div>
+</main>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+/* Apply saved/system theme before first paint to avoid a flash. */
+(function(){
+  try{
+    var saved = localStorage.getItem("theme");
+    var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  }catch(e){}
+})();
+</script>
+<title>Talks & Academic Service — Suman Sourav, Aalborg University</title>
+<meta name="description" content="Invited talks, keynotes, panels, and academic service (editorial, reviewing, program committees) by Dr. Suman Sourav.">
+<link rel="canonical" href="https://username.github.io/talks-service.html">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Suman Sourav">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Talks & Academic Service — Suman Sourav, Aalborg University">
+<meta property="og:description" content="Invited talks, keynotes, panels, and academic service (editorial, reviewing, program committees) by Dr. Suman Sourav.">
+<meta property="og:url" content="https://username.github.io/talks-service.html">
+<meta property="og:site_name" content="Suman Sourav">
+<!-- [TO UPDATE] Add an og:image once you have a profile photo, e.g.: -->
+<!-- <meta property="og:image" content="https://username.github.io/assets/images/suman-sourav-1.jpg"> -->
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Talks & Academic Service — Suman Sourav, Aalborg University">
+<meta name="twitter:description" content="Invited talks, keynotes, panels, and academic service (editorial, reviewing, program committees) by Dr. Suman Sourav.">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">SS</span>
+      <span>Suman Sourav<small>Asst. Professor, Aalborg University</small></span>
+    </a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Switch to dark theme">
+        <span class="knob" id="theme-toggle-knob" aria-hidden="true">☀️</span>
+      </button>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <!-- <li><a href="projects.html">Projects</a></li> -->
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="talks-service.html" aria-current="page">Talks & Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a class="nav-cta js-cv-link" href="#" download> Download CV </a></li>-->
+      </ul>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">Home</a> / Talks &amp; Service</p>
+     <!--<p class="eyebrow">Talks &amp; academic service</p>-->
+    <h1>Talks, panels &amp; academic service</h1>
+    <p class="lede">Invited talks and keynotes, alongside editorial, reviewing, and program-committee service.</p>
+  </div>
+</section>
+
+<section class="text-content">
+  <div class="container two-col">
+    <div>
+      <h2>Invited talks, panels &amp; presentations</h2>
+      <div class="timeline">
+        <div class="timeline-item"><div class="when">14.09.2026 (Upcoming)</div><h3>Workshop, 13th Heidelberg Laureate Forum</h3></div>
+        <div class="timeline-item"><div class="when">16.06.2026</div><h3>Keynote — International Workshop on Smart Computing for Smart Cities (SC2)</h3><p class="muted">Co-located with IEEE WoWMoM Conference, Italy.</p></div>
+        <div class="timeline-item"><div class="when">16.06.2026</div><h3>Invited panel member — DroneSenseAI 2026</h3><p class="muted">International Workshop on AI for Networked Drone and Sensor Applications, IEEE WoWMoM Conference, Italy.</p></div>
+        <div class="timeline-item"><div class="when">08.05.2025</div><h3>Invited panel member — AlumNode Panel Talk</h3><p class="muted">Mentoring in Academia &amp; Industry.</p></div>
+        <div class="timeline-item"><div class="when">23.02.2024</div><h3>University of New South Wales, Sydney, Australia</h3><p class="muted">"Minimizing Data Delivery Time over Satellite Networks"</p></div>
+        <div class="timeline-item"><div class="when">23.09.2023</div><h3>SUTD Wireless Innovation Centre (SWIC), Singapore</h3><p class="muted">"Minimizing Data Delivery Time over Satellite Networks"</p></div>
+        <div class="timeline-item"><div class="when">2022</div><h3>Highlights of Algorithms (HALG 2022)</h3><p class="muted">Invited presentation — "Latency, Capacity and Distributed MST"</p></div>
+        <div class="timeline-item"><div class="when">06.12.2022</div><h3>IIT Hyderabad, India</h3><p class="muted">"Leader Election in Well-Connected Graphs"</p></div>
+        <div class="timeline-item"><div class="when">01.12.2022</div><h3>Xidian University, China</h3><p class="muted">"Latency Conductance and the Role of Connectivity in Graph Problems"</p></div>
+        <div class="timeline-item"><div class="when">21.11.2022</div><h3>ISI Kolkata, India</h3><p class="muted">"Latency, Capacity, and Distributed MSTs"</p></div>
+        <div class="timeline-item"><div class="when">26.09.2019</div><h3>Heidelberg Laureate Forum, Germany</h3><p class="muted">"Gossip with Latencies"</p></div>
+        <div class="timeline-item"><div class="when">11.10.2017</div><h3>SoC Research Talk, NUS, Singapore</h3><p class="muted">"Bounds on Distributed Information Spreading in Networks with Latencies"</p></div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="card">
+        <h3>Academic service</h3>
+        <ul>
+          <li>Mentor, HLF Alumnode (2021–Present)</li>
+          <li>Mentor, Danish Data Science Academy Mentorship Programme (2025–Present)</li>
+          <!--<li>External Thesis Examiner: 1 Master's + 5 Bachelor's students, IT University Copenhagen; 1 Bachelor's student, University of Southern Denmark</li>-->
+          <li>Guest Editor, Special Issue "Advances in Routing and Scheduling Technology for Data Communications", <em>Network</em> (MDPI, ISSN 2673-8732)</li>
+          <li>Program Committee: IEEE SmartGridComm-2026, IEEE SmartGridComm-2025, ICDCIT-2023</li>
+          <li>Session Chair: Data Analysis and Computation in Smart Metering, IEEE SmartGridComm-2022</li>
+        </ul>
+      </div>
+      <div class="card" style="margin-top:1.5rem;">
+        <h3>Reviewing</h3>
+        <p class="muted">IEEE TMLCN-2026, IEEE TIFS-2026, IEEE IOTJ-2026, IEEE VTC-2026, IEEE TIFS-2024, IEEE TOC-2023, IEEE TSG-2023, IEEE TSG-2022, ICDCS-2022, IEEE TGCN-2021, ICDCS-2021, PODC-2021, DISC-2020, SIROCCO-2020, OPODIS-2019.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><span class="brand-mark" aria-hidden="true">SS</span><span>Suman Sourav<small>Aalborg University, Copenhagen</small></span></div>
+      <ul class="footer-links">
+        <li><a class="js-email" href="mailto:sumansourav@cs.aau.dk">sumansourav@cs.aau.dk</a></li>
+        <li><a data-social="scholar" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a data-social="orcid" target="_blank" rel="noopener">ORCID</a></li>
+        <li><a data-social="dblp" target="_blank" rel="noopener">DBLP</a></li>
+        <li><a data-social="linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="footer-links">
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-note">
+    &copy; <span class="js-year"></span> Suman Sourav · Assistant Professor of Computer Science, Aalborg University, Copenhagen. Site last updated September 2026.
+  </div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/research-data.js"></script>
+<script src="js/publications-data.js"></script>
+<script src="js/projects-data.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/trivia-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+/* Apply saved/system theme before first paint to avoid a flash. */
+(function(){
+  try{
+    var saved = localStorage.getItem("theme");
+    var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  }catch(e){}
+})();
+</script>
+<title>Suman Sourav — Assistant Professor of Computer Science, Aalborg University</title>
+<meta name="description" content="Dr. Suman Sourav is an Assistant Professor of Computer Science at Aalborg University, Copenhagen, researching distributed systems, satellite networks, IoT, edge-cloud computing, and cyber-physical-systems security.">
+<link rel="canonical" href="https://username.github.io/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Suman Sourav">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Suman Sourav — Assistant Professor of Computer Science, Aalborg University">
+<meta property="og:description" content="Dr. Suman Sourav is an Assistant Professor of Computer Science at Aalborg University, Copenhagen, researching distributed systems, satellite networks, IoT, edge-cloud computing, and cyber-physical-systems security.">
+<meta property="og:url" content="https://username.github.io/">
+<meta property="og:site_name" content="Suman Sourav">
+<!-- [TO UPDATE] Add an og:image once you have a profile photo, e.g.: -->
+<!-- <meta property="og:image" content="https://username.github.io/assets/images/suman-sourav-1.jpg"> -->
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Suman Sourav — Assistant Professor of Computer Science, Aalborg University">
+<meta name="twitter:description" content="Dr. Suman Sourav is an Assistant Professor of Computer Science at Aalborg University, Copenhagen, researching distributed systems, satellite networks, IoT, edge-cloud computing, and cyber-physical-systems security.">
+
+
+  <!-- Open Graph SEO -->
+    <meta property="og:title" content="Suman Sourav - Academic Profile">
+    <meta property="og:description" content="Assistant Professor at Aalborg University. Research: Distributed Dynamic Systems, Satellite Networks, IoT & CPS Security.">
+    <meta property="og:type" content="website">
+
+    <!-- Bootstrap 5 & FontAwesome -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Suman Sourav",
+  "alternateName": "Dr. Suman Sourav",
+  "jobTitle": "Assistant Professor of Computer Science",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "Aalborg University",
+    "address": "Copenhagen, Denmark"
+  },
+  "email": "mailto:sumansourav@cs.aau.dk",
+  "url": "https://username.github.io/",
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "dateModified": "2026-09-01",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Suman Sourav",
+    "jobTitle": "Assistant Professor of Computer Science",
+    "worksFor": { "@type": "CollegeOrUniversity", "name": "Aalborg University" }
+  }
+}
+</script>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">SS</span>
+      <span>Suman Sourav<small>Asst. Professor, Aalborg University</small></span>
+    </a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" type="button" role="switch" aria-checked="true" aria-label="Switch to dark theme">
+        <span class="knob" id="theme-toggle-knob" aria-hidden="true">☀️</span>
+      </button>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <!-- <li><a href="projects.html">Projects</a></li> -->
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="awards.html">Awards</a></li>
+        <li><a href="talks-service.html">Talks & Service</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a class="nav-cta js-cv-link" href="#" download> Download CV </a></li>-->
+      </ul>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Assistant Professor of Computer Science <br> Aalborg University, Copenhagen</p>
+      <h1>Suman Sourav — building networks that stay fast, secure, and connected.</h1>
+      <p class="lede">I work at the intersection of distributed-systems theory and real networked infrastructure: satellite constellations, industrial control systems, and IoT edge devices. My research asks a simple question with hard answers — how do we move information quickly and safely when the network keeps changing underneath us?</p>
+
+       <br>
+      <div class="hero-tags">
+        <span class="tag tag-teal">Distributed Systems</span>
+        <span class="tag tag-amber">Satellite Networks</span>
+        <span class="tag tag-coral">IoT &amp; Edge-Cloud Systems</span>
+        <span class="tag">Cyber-Physical Systems Security</span>
+      </div>
+
+
+    </div>
+    <div>
+      <div class="photo-carousel">
+        <div class="fallback">
+          <span style="font-size:2.4rem;">🖼️</span>
+          <span><strong>Photo placeholder.</strong><br>Add photos at <code>assets/images/</code> and list them in <code>js/config.js</code> to enable the auto-scrolling carousel.</span>
+        </div>
+      </div>
+      <br><br>
+      <div class="d-flex justify-content-center gap-4 fs-2">
+          <a href="mailto:sumansourav@cs.aau.dk" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?hl=en&user=xe4WnykAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          <a href="https://orcid.org/my-orcid?orcid=0000-0001-6923-5762" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+          <a href="https://dblp.org/pid/190/7190.html" target="_blank" title="DBLP"><i class="fas fa-book"></i></a>
+          <a href="https://www.linkedin.com/in/smnsourav/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://vbn.aau.dk/en/persons/sumansourav/" target="_blank" title="University"><i class="fas fa-university"></i></a>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary js-cv-link" href="#" download>Download CV</a>
+        <a class="btn btn-outline" href="contact.html">Get in touch</a>
+        <a class="btn btn-ghost" href="publications.html">Browse publications</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section aria-labelledby="story-heading">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">The short version</p>
+      <h2 id="story-heading">Why this research matters</h2>
+      <p class="lede">Modern infrastructure like satellite mega-constellations, smart grids, IoT fleets, etc. depend on networks whose topology and trust assumptions shift constantly. My work develops the algorithms and detection techniques that keep those networks fast under change and secure under attack.</p>
+    </div>
+    <!--  <div class="grid grid-3">
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">🕸️</div>
+        <h3>What I research</h3>
+        <p class="muted">Distributed algorithms, satellite &amp; time-varying network routing, industrial-control-system security, and edge-IoT machine learning.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">🏆</div>
+        <h3>What I've achieved</h3>
+        <p class="muted">NUS Research Achievement Award, Heidelberg Laureate Forum alumnus, publications in IEEE TPDS, TMC, TIFS, TSG, Algorithmica, and JCSS.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">🎓</div>
+        <h3>What I'm doing now</h3>
+        <p class="muted">Teaching Distributed Systems and Cyber-Physical Systems at Aalborg University, and supervising Master's and Bachelor's thesis students.</p>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+
+
+<section class="section-alt" aria-labelledby="news-heading">
+  <div class="container two-col">
+    <div>
+      <p class="eyebrow">Latest</p>
+      <h2 id="news-heading">News &amp; upcoming events</h2>
+      <div id="news-list"></div>
+    </div>
+    <div>
+      <br><br><br><br><br><br>
+      <div class="trivia-card">
+        <h3>🎲 Random research fact</br>(AI generated)</h3>
+        <p class="trivia-text" id="trivia-text"></p>
+        <button class="trivia-btn" id="trivia-btn" type="button">Give me another</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section  aria-labelledby="pubs-heading">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Selected work</p>
+      <h2 id="pubs-heading">Selected recent publications</h2>
+      <p class="lede">A few recent highlights — see the full, filterable list on the <a href="publications.html">Publications page</a>.</p>
+    </div>
+    <div class="grid grid-2" id="home-pub-list"></div>
+  </div>
+</section>
+
+<section class="section-alt" aria-labelledby="awards-heading">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Recognition</p>
+      <h2 id="awards-heading">Awards &amp; highlights</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card"><h3>NUS Research Achievement Award</h3><p class="muted">School of Computing, NUS, for outstanding research performance, AY 2017–2018.</p></div>
+      <div class="card"><h3>Heidelberg Laureate Forum</h3><p class="muted">Selected as 1 of 100 young researchers worldwide (2019); invited back as one of 20 alumni for the 10th-anniversary edition (2023).</p></div>
+      <div class="card"><h3>Global Young Scientists Summit</h3><p class="muted">Selected to attend GYSS 2024, hosted by the National Research Foundation, Singapore.</p></div>
+    </div>
+    <p style="margin-top:1.5rem;"><a href="awards.html">See the full list of awards →</a></p>
+  </div>
+</section>
+
+<section aria-labelledby="visitors-heading">
+  <div class="container" >
+    <p class="eyebrow" id="visitors-heading" style="text-align:center;">Site stats</p>
+    <div class="visitor-widget" style="text-align:center;">
+      <div style="text-align:center;">
+        <div class="visitor-count-label" style="text-align:center;">Visitors</div>
+        <div class="visitor-count-value" id="visitor-count-value" style="text-align:center;">—</div>
+        <!--<p class="muted" style="font-size:.78rem;margin:.3rem 0 0;" id="visitor-note">Privacy-friendly counter via GoatCounter — no cookies, no IP storage.</p> -->
+      </div>
+      <svg class="visitor-map" viewBox="0 0 120 60" fill="none" aria-hidden="true" style="text-align:center;">
+        <rect width="120" height="60" rx="8" fill="var(--paper-alt)"/>
+        <g fill="var(--chalk-teal)" opacity="0.55">
+          <circle cx="20" cy="24" r="3"/><circle cx="55" cy="18" r="2"/><circle cx="70" cy="30" r="4"/>
+          <circle cx="90" cy="22" r="2"/><circle cx="35" cy="40" r="2"/><circle cx="100" cy="40" r="3"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt" aria-labelledby="collab-heading">
+  <div class="container" style="text-align:center;">
+    <h2 id="collab-heading">Let's work together</h2>
+    <p class="lede" style="margin:0 auto 1.5rem;">Open to collaborations, PhD/Master's supervision, and speaking invitations in distributed systems, networking, and cyber-physical-systems security.</p>
+    <div class="cta-row" style="justify-content:center;">
+      <a class="btn btn-primary" href="contact.html">Contact me</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><span class="brand-mark" aria-hidden="true">SS</span><span>Suman Sourav<small>Aalborg University, Copenhagen</small></span></div>
+      <ul class="footer-links">
+        <li><a class="js-email" href="mailto:sumansourav@cs.aau.dk">sumansourav@cs.aau.dk</a></li>
+        <li><a data-social="scholar" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a data-social="orcid" target="_blank" rel="noopener">ORCID</a></li>
+        <li><a data-social="dblp" target="_blank" rel="noopener">DBLP</a></li>
+        <li><a data-social="linkedin" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="footer-links">
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-note">
+    &copy; <span class="js-year"></span> Suman Sourav · Assistant Professor of Computer Science, Aalborg University, Copenhagen. Site last updated September 2026.
+  </div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/research-data.js"></script>
+<script src="js/publications-data.js"></script>
+<script src="js/projects-data.js"></script>
+<script src="js/news-data.js"></script>
+<script src="js/trivia-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
