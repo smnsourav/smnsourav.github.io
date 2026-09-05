@@ -6,6 +6,7 @@
    ========================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
+  setHeaderHeightVar();
   initThemeToggle();
   initNavToggle();
   initFooterYear();
@@ -14,16 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
   initPhotoCarousel();
   initTrivia();
   initVisitorCounter();
-  setHeaderHeightVar();
-  initThemeToggle();
-  initNavToggle();
-  window.addEventListener("resize", setHeaderHeightVar);
   if (document.getElementById("pub-list")) initPublicationsPage();
   if (document.getElementById("home-pub-list")) renderHomeSelectedPubs();
   if (document.getElementById("news-list")) renderNews();
   if (document.getElementById("research-areas")) renderResearchAreas();
   if (document.getElementById("project-list")) renderProjects();
 });
+
+window.addEventListener("resize", setHeaderHeightVar);
 
 function setHeaderHeightVar() {
   const header = document.querySelector(".site-header");
@@ -45,7 +44,6 @@ function initThemeToggle() {
     if (knob) knob.textContent = isDark ? "🌙" : "☀️";
   }
 
-  // Head script already set data-theme before paint; just sync the control.
   const current = document.documentElement.getAttribute("data-theme") || "light";
   applyState(current);
 
