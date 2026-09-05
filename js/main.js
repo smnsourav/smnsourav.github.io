@@ -14,12 +14,25 @@ document.addEventListener("DOMContentLoaded", () => {
   initPhotoCarousel();
   initTrivia();
   initVisitorCounter();
+  setHeaderHeightVar();
+  initThemeToggle();
+  initNavToggle();
+  window.addEventListener("resize", setHeaderHeightVar);
   if (document.getElementById("pub-list")) initPublicationsPage();
   if (document.getElementById("home-pub-list")) renderHomeSelectedPubs();
   if (document.getElementById("news-list")) renderNews();
   if (document.getElementById("research-areas")) renderResearchAreas();
   if (document.getElementById("project-list")) renderProjects();
 });
+
+
+
+function setHeaderHeightVar() {
+  const header = document.querySelector(".site-header");
+  if (!header) return;
+  document.documentElement.style.setProperty("--header-h", header.offsetHeight + "px");
+}
+
 
 /* ---------------- Theme toggle (light/dark, persisted per browser) ---------------- */
 function initThemeToggle() {
