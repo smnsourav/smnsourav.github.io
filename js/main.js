@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.getElementById("project-list")) renderProjects();
 });
 
-window.addEventListener("resize", setHeaderHeightVar);
 
 function setHeaderHeightVar() {
   const header = document.querySelector(".site-header");
@@ -326,4 +325,10 @@ window.addEventListener("load", () => {
     areaEl.value = area;
     areaEl.dispatchEvent(new Event("input"));
   }
+
+window.addEventListener("resize", setHeaderHeightVar);
+window.addEventListener("load", setHeaderHeightVar);
+
+
+
 });
