@@ -18,6 +18,18 @@
  */
 const PUBLICATIONS = [
   // ---------------- JOURNAL ARTICLES ----------------
+
+     {
+    type: "conference", year: 2026, selected: true, area: "edge-iot",
+    title: "On Overcoming Compute and Memory Constraints for Distributed Machine Learning at the IoT Edge",
+    authorsHtml: "Debadarshini, J.*; <strong>Sourav, S.</strong>*; Singh, L.; Kumar, S. S.",
+    venue: "IEEE Conference on Local Computer Networks (LCN 2026)",
+    note: "Accepted and to appear · *<strong>Both authors contributed equally · <span class=\"pub-pill pub-pill-highlight\">🏅 Nominated for Best Paper Award </span> · Core Ranking: B</strong>",
+    doi: ""
+  },
+
+
+
   {
     type: "journal", year: 2026, selected: true, area: "satellite",
     title: "One-Pass & Smart-Search: A Solver for Minimizing Data Delivery Time over Time-Varying Networks",
@@ -27,29 +39,23 @@ const PUBLICATIONS = [
     doi: "10.1109/TMC.2026.3715422"
   },
   {
-    type: "journal", year: 2026, selected: true, area: "cps-security",
+    type: "journal", year: 2026, selected: true, area: "edge-iot",
     title: "The Throughput Gain of Hypercycle-level Resource Reservation for Time-Triggered Communication",
     authorsHtml: "Wang, P.; <strong>Sourav, S.</strong>; Chen, B.; Li, H.; Wang, F.; Zhang, F.",
     venue: "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (IEEE TCAD)",
     note: "Accepted and to appear · <strong>Journal Core Ranking: A* equivalent</strong>",
-    doi: ""
+    doi: "10.1109/TCAD.2026.3727381"
   },
-  {
+
+
+
+    {
     type: "journal", year: 2026, selected: true, area: "satellite",
     title: "An SFC-constrained Max-Flow Solver for Satellite Networks using Flexible Function-Time Expanded Graph",
     authorsHtml: "Wang, P.; <strong>Sourav, S.</strong>; Chen, B.; Li, H.",
     venue: "IEEE Transactions on Mobile Computing (IEEE TMC), vol. 25, no. 3, pp. 4103–4120",
-    note: "Mar. 2026 ·  <strong>Journal Core Ranking: A*</strong>",
+    note:  "<strong>Journal Core Ranking: A*</strong>",
     doi: "10.1109/TMC.2025.3623456"
-  },
-
-   {
-    type: "conference", year: 2026, selected: true, area: "edge-iot",
-    title: "On Overcoming Compute and Memory Constraints for Distributed Machine Learning at the IoT Edge",
-    authorsHtml: "Debadarshini, J.*; <strong>Sourav, S.</strong>*; Singh, L.; Kumar, S. S.",
-    venue: "IEEE Conference on Local Computer Networks (LCN 2026)",
-    note: "Accepted and to appear · *<strong>Both authors contributed equally · Best-paper award candidate · Core Ranking: B</strong>",
-    doi: ""
   },
 
   {
@@ -57,7 +63,7 @@ const PUBLICATIONS = [
     title: "FlexSatIoE: Flexible Routing and Buffering for Satellite Networks Enabled Internet of Everything Applications",
     authorsHtml: "Wang, P.; <strong>Sourav, S.</strong>; Chen, B.; Li, H.",
     venue: "IEEE Internet of Things Journal (IEEE IOTJ), vol. 13, no. 1, pp. 196–211",
-    note: "1 Jan. 2026 ·  <strong>Journal Core Ranking: A* equivalent</strong>",
+    note: " <strong>Journal Core Ranking: A* equivalent</strong>",
     doi: "10.1109/JIOT.2025.3594890"
   },
   {
@@ -65,7 +71,7 @@ const PUBLICATIONS = [
     title: "SRLR: Symbolic Regression based Logic Recovery to Counter Programmable Logic Controller Attacks",
     authorsHtml: "Zhou, H.; <strong>Sourav, S.</strong>; Chen, B.; Yu, K.",
     venue: "IEEE Transactions on Information Forensics and Security (TIFS), vol. 20, pp. 12491–12506",
-    note: "2025 ·  <strong>Journal Core Ranking: A*</strong>",
+    note: " <strong>Journal Core Ranking: A*</strong>",
     doi: "10.1109/TIFS.2025.3634027"
   },
   {
@@ -73,7 +79,7 @@ const PUBLICATIONS = [
     title: "Exposing Hidden Attackers in Industrial Control Systems using Micro-distortions",
     authorsHtml: "<strong>Sourav, S.</strong>; Chen, B.",
     venue: "IEEE Transactions on Smart Grid, vol. 15, no. 2, pp. 2089–2101",
-    note: "March 2024 ·  <strong>Journal Core Ranking: A*</strong> equivalent",
+    note: " <strong>Journal Core Ranking: A*</strong> equivalent",
     doi: "10.1109/TSG.2023.3300710"
   },
   {
@@ -81,7 +87,7 @@ const PUBLICATIONS = [
     title: "Leader Election in Well-Connected Graphs",
     authorsHtml: "Gilbert, S.; Robinson, P.; <strong>Sourav, S.</strong>",
     venue: "Algorithmica, vol. 85, pp. 1029–1066",
-    note: "Apr. 2023 · Authors alphabetically ordered (Distributed Computing convention) ·  <strong>Journal Core Ranking: A*</strong>",
+    note: " Authors alphabetically ordered (Distributed Computing convention) ·  <strong>Journal Core Ranking: A*</strong>",
     doi: "10.1007/s00453-022-01068-x"
   },
   {
@@ -89,7 +95,7 @@ const PUBLICATIONS = [
     title: "Latency, Capacity and Distributed MST",
     authorsHtml: "Augustine, J.; Gilbert, S.; Kuhn, F.; Robinson, P.; <strong>Sourav, S.</strong>",
     venue: "Journal of Computer and System Sciences (JCSS), vol. 126, pp. 1–20",
-    note: "Jul. 2022 · Authors alphabetically ordered ·  <strong>Journal Core Ranking: A*</strong>",
+    note: " Authors alphabetically ordered ·  <strong>Journal Core Ranking: A*</strong>",
     doi: "10.1016/j.jcss.2021.11.006"
   },
   {
@@ -97,7 +103,7 @@ const PUBLICATIONS = [
     title: "Distributed Graph Realizations",
     authorsHtml: "Augustine, J.; Choudhary, K.; Cohen, A.; Peleg, D.; Sivasubramaniam, S.; <strong>Sourav, S.</strong>",
     venue: "IEEE Transactions on Parallel and Distributed Systems (TPDS), vol. 33, no. 6, pp. 1321–1337",
-    note: "1 June 2022 · Authors alphabetically ordered ·  <strong>Journal Core Ranking: A*</strong>",
+    note: " Authors alphabetically ordered ·  <strong>Journal Core Ranking: A*</strong>",
     doi: "10.1109/TPDS.2021.3104239"
   },
   {
@@ -105,7 +111,7 @@ const PUBLICATIONS = [
     title: "Slow Links, Fast Links, and the Cost of Gossip",
     authorsHtml: "<strong>Sourav, S.</strong>; Robinson, P.; Gilbert, S.",
     venue: "IEEE Transactions on Parallel and Distributed Systems (TPDS), vol. 30, no. 9, pp. 2130–2147",
-    note: "1 Sept. 2019 ·  <strong>Journal Core Ranking: A*</strong>",
+    note: " <strong>Journal Core Ranking: A*</strong>",
     doi: "10.1109/TPDS.2019.2905568"
   },
 

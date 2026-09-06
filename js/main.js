@@ -187,7 +187,7 @@ function initVisitorCounter() {
   document.body.appendChild(s);
 
   // Fetch the public total-visits number via GoatCounter's public JSON endpoint.
-  fetch(`https://${SITE_CONFIG.goatCounterCode}.goatcounter.com/counter/TOTAL.json`)
+  fetch(`https://${SITE_CONFIG.goatCounterCode}.goatcounter.com/counter/TOTAL.json`, {cache: "no-store"})
     .then(r => r.ok ? r.json() : Promise.reject())
     .then(data => {
       if (data && data.count) valueEl.textContent = data.count.replace(/&nbsp;/g, " ");
@@ -209,7 +209,7 @@ function renderPubCard(p) {
     <span class="pub-badge">${pubTypeLabel(p.type)}</span>
     <h3>${p.title}</h3>
     <div class="pub-meta"><span>${p.authorsHtml}</span></div>
-    <div class="pub-meta"><span>${p.venue}</span><span>${p.year}</span></div>
+    <div class="pub-meta"><span>${p.venue}</span><span class="pub-pill pub-pill-date">${p.dateLabel || p.year}</span></div>
     ${p.note ? `<div class="pub-meta"><span>${p.note}</span></div>` : ""}
     ${links.length ? `<div class="pub-links">${links.join("")}</div>` : ""}
   </article>`;
