@@ -4,8 +4,12 @@
  */
 const NEWS_ITEMS = [
   {
+    date: "Oct 2026",
+    text: "Best paper award at the 51st IEEE Conference on Local Computer Networks (LCN): On Overcoming Compute and Memory Constraints for Distributed Machine Learning at the IoT Edge."
+  },
+  {
     date: "Sep 2026",
-    text: "Upcoming: workshop presentation at the 13th Heidelberg Laureate Forum, 14 September 2026."
+    text: " Workshop at the 13th Heidelberg Laureate Forum, 14 September 2026."
   },
   {
     date: "July 2026",
@@ -19,9 +23,6 @@ const NEWS_ITEMS = [
     date: "Jun 2026",
     text: "Keynote Talk at the International Workshop on Smart Computing for Smart Cities (SC2), co-located with IEEE WoWMoM 2026, Italy and served as an invited panel member at DroneSenseAI 2026."
   },
-{
-    date: "June 2026",
-    text: "New paper accepted at the 51st IEEE Conference on Local Computer Networks (LCN): On Overcoming Compute and Memory Constraints for Distributed Machine Learning at the IoT Edge."
-  },
+
 
 ];

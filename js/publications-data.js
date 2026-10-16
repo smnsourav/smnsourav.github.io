@@ -23,9 +23,9 @@ const PUBLICATIONS = [
     type: "conference", year: 2026, selected: true, area: "edge-iot",
     title: "On Overcoming Compute and Memory Constraints for Distributed Machine Learning at the IoT Edge",
     authorsHtml: "Debadarshini, J.*; <strong>Sourav, S.</strong>*; Singh, L.; Kumar, S. S.",
-    venue: "IEEE Conference on Local Computer Networks (LCN 2026)",
-    note: "Accepted and to appear · *<strong>Both authors contributed equally · <span class=\"pub-pill pub-pill-highlight\">🏅 Nominated for Best Paper Award </span> · Core Ranking: B</strong>",
-    doi: ""
+    venue: "IEEE Conference on Local Computer Networks (LCN 2026), pp. 1-11."
+    note: "Conference Core Ranking: B, *<strong>Both authors contributed equally · <span class=\"pub-pill pub-pill-highlight\">🏅 Best Paper Award </span> · Core Ranking: B</strong>",
+    doi: "10.1109/LCN67947.2026.11660799"
   },
 
 
@@ -34,8 +34,8 @@ const PUBLICATIONS = [
     type: "journal", year: 2026, selected: true, area: "satellite",
     title: "One-Pass & Smart-Search: A Solver for Minimizing Data Delivery Time over Time-Varying Networks",
     authorsHtml: "Wang, P.; Chen, B.; <strong>Sourav, S.</strong>; Li, H.",
-    venue: "IEEE Transactions on Mobile Computing (IEEE TMC)",
-    note: "Accepted and to appear · <strong>Journal Core Ranking: A*</strong>",
+    venue: "IEEE Transactions on Mobile Computing (IEEE TMC), vol. 25, no. 11, pp. 21234-21251, Nov. 2026",
+    note: "<strong>Journal Core Ranking: A*</strong>",
     doi: "10.1109/TMC.2026.3715422"
   },
   {
