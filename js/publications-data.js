@@ -19,17 +19,14 @@
 const PUBLICATIONS = [
   // ---------------- JOURNAL ARTICLES ----------------
 
-     {
+  {
     type: "conference", year: 2026, selected: true, area: "edge-iot",
     title: "On Overcoming Compute and Memory Constraints for Distributed Machine Learning at the IoT Edge",
     authorsHtml: "Debadarshini, J.*; <strong>Sourav, S.</strong>*; Singh, L.; Kumar, S. S.",
-    venue: "IEEE Conference on Local Computer Networks (LCN 2026), pp. 1-11."
+    venue: "IEEE Conference on Local Computer Networks (LCN 2026), pp. 1-11.",
     note: "Conference Core Ranking: B, *<strong>Both authors contributed equally · <span class=\"pub-pill pub-pill-highlight\">🏅 Best Paper Award </span> · Core Ranking: B</strong>",
     doi: "10.1109/LCN67947.2026.11660799"
   },
-
-
-
   {
     type: "journal", year: 2026, selected: true, area: "satellite",
     title: "One-Pass & Smart-Search: A Solver for Minimizing Data Delivery Time over Time-Varying Networks",
@@ -46,10 +43,7 @@ const PUBLICATIONS = [
     note: "Accepted and to appear · <strong>Journal Core Ranking: A* equivalent</strong>",
     doi: "10.1109/TCAD.2026.3727381"
   },
-
-
-
-    {
+  {
     type: "journal", year: 2026, selected: true, area: "satellite",
     title: "An SFC-constrained Max-Flow Solver for Satellite Networks using Flexible Function-Time Expanded Graph",
     authorsHtml: "Wang, P.; <strong>Sourav, S.</strong>; Chen, B.; Li, H.",
@@ -57,7 +51,6 @@ const PUBLICATIONS = [
     note:  "<strong>Journal Core Ranking: A*</strong>",
     doi: "10.1109/TMC.2025.3623456"
   },
-
   {
     type: "journal", year: 2026, selected: true, area: "satellite",
     title: "FlexSatIoE: Flexible Routing and Buffering for Satellite Networks Enabled Internet of Everything Applications",

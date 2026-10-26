@@ -8,6 +8,10 @@ const NEWS_ITEMS = [
     text: "Best paper award at the 51st IEEE Conference on Local Computer Networks (LCN): On Overcoming Compute and Memory Constraints for Distributed Machine Learning at the IoT Edge."
   },
   {
+    date: "Oct 2026",
+    text: "Invited TPC member for IEEE ICC 2027."
+  },
+  {
     date: "Sep 2026",
     text: " Workshop at the 13th Heidelberg Laureate Forum, 14 September 2026."
   },
